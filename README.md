@@ -1,4 +1,4 @@
-# 📱 Smile Day
+# Smile Day
 
 <div align="center">
 
@@ -19,6 +19,8 @@
 
 **Smile Day** 是一款基于**三天情境对比**与**极简文字交互**的生活决策型天气应用。它通过独特的滑屏交互，将复杂的天气数据转化为直观的冷暖感知与清晰的行动指南，帮助用户在3秒内做出出行决策。
 
+> 这个公开仓库用于展示项目说明和法律文档。当前 App 源码与发布构建在私有仓库中维护，公开仓库不会同步未发布的内部实现、密钥或构建配置。
+
 ### 核心价值
 
 - ⚡ **3秒决策** - 快速获取核心天气信息
@@ -34,8 +36,8 @@
 ### 🌤️ 核心天气功能
 
 - ✅ **三日天气对比** - 昨日/今日/明日温度对比，直观感受温度变化
-- ✅ **实时天气数据** - 基于WeatherAPI.com的准确天气数据
-- ✅ **7天天气预报** - 未来一周详细天气预报
+- ✅ **实时天气数据** - 基于 Apple WeatherKit、Open-Meteo、OpenStreetMap Nominatim 和可选山海天气数据源
+- ✅ **近期10天天气预报** - 查看近期天气变化
 - ✅ **历史天气数据** - 查看过去天气记录
 - ✅ **24小时预报** - 精确到小时的天气变化
 - ✅ **温度趋势图表** - 可视化温度变化趋势
@@ -52,8 +54,8 @@
 - ✅ **滑屏交互** - 流畅的左右滑屏体验
 - ✅ **动态背景** - 根据温度自动调整渐变背景
 - ✅ **智能建议** - 穿衣建议、出行建议
-- ✅ **iOS小组件** - 桌面小组件支持
-- ✅ **iPad适配** - 完美支持iPad全屏显示
+- ✅ **iOS小组件** - 桌面、锁屏和透明小组件支持
+- ✅ **Apple Watch** - 支持手表端天气信息展示
 
 ### 💰 订阅功能
 
@@ -64,7 +66,7 @@
 - ✅ **订阅版** - 解锁全部功能
   - 无限制刷新
   - 10个城市
-  - 7天预报
+  - 近期10天天气预报
   - 历史数据
   - 个性化推送
   - 高级建议
@@ -75,7 +77,7 @@
 
 ### 开发环境
 
-- **平台**: iOS 17.0+
+- **平台**: iOS 16.0+
 - **语言**: Swift 6.0+
 - **UI框架**: SwiftUI + UIKit
 - **架构**: MVVM + Repository Pattern
@@ -93,8 +95,10 @@
 
 ### 第三方服务
 
-- **天气API**: WeatherAPI.com
-- **地理编码**: Open-Meteo Geocoding API
+- **天气数据**: Apple WeatherKit、Open-Meteo、山海天气接口
+- **地理编码**: OpenStreetMap Nominatim
+- **订阅与支付**: Apple StoreKit
+- **通知推送**: APNs + Smile Day 推送服务
 
 ---
 
@@ -149,6 +153,14 @@
 
 ---
 
+## 法律文档
+
+- 隐私政策: https://smile-day-push-service.ximai.workers.dev/privacy
+- 服务条款(EULA): https://smile-day-push-service.ximai.workers.dev/terms
+- Apple 标准 EULA: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+---
+
 ---
 
 
@@ -176,14 +188,17 @@
 
 ## 🙏 致谢
 
-- WeatherAPI.com - 天气数据服务
-- Open-Meteo - 地理编码服务
-- Apple - SwiftUI框架和开发工具
+- Apple - SwiftUI、WeatherKit、StoreKit、APNs 和开发工具
+- Open-Meteo - 天气相关开放数据
+- OpenStreetMap Nominatim - 地理编码服务
 
 ---
 
 ### 最近更新
 
+- ✅ **App Store 订阅合规更新** (2026-07-09)
+  - 更新隐私政策和服务条款公开链接
+  - 同步当前天气数据源、推送服务和订阅说明
 - ✅ **App Store合规修复** (2025-11-06)
   - 基础通知权限免费化
   - 添加隐私政策和服务条款链接
