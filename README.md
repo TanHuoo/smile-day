@@ -4,12 +4,14 @@
 
 **把复杂天气翻译成直观建议**
 
-[![iOS](https://img.shields.io/badge/iOS-17.0+-blue.svg)](https://developer.apple.com/ios/)
+[![iOS](https://img.shields.io/badge/iOS-16.0+-blue.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/Swift-6.0+-orange.svg)](https://swift.org/)
 [![SwiftUI](https://img.shields.io/badge/SwiftUI-5.0+-green.svg)](https://developer.apple.com/xcode/swiftui/)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
 [English](#-smile-day) | [中文](#-smile-day-1)
+
+[产品官网](https://tanhuoo.github.io/smile-day/) · [公开文档](https://tanhuoo.github.io/smile-day/docs/) · [授权信息](https://tanhuoo.github.io/smile-day/authorization/) · [隐私政策](https://tanhuoo.github.io/smile-day/privacy/) · [服务条款](https://tanhuoo.github.io/smile-day/terms/)
 
 </div>
 
@@ -155,9 +157,21 @@
 
 ## 法律文档
 
-- 隐私政策: https://smile-day-push-service.ximai.workers.dev/privacy
-- 服务条款(EULA): https://smile-day-push-service.ximai.workers.dev/terms
+- 授权信息: https://tanhuoo.github.io/smile-day/authorization/
+- 隐私政策: https://tanhuoo.github.io/smile-day/privacy/
+- 服务条款(EULA): https://tanhuoo.github.io/smile-day/terms/
 - Apple 标准 EULA: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+## 公开网站
+
+公开网站位于 [`website/`](website/)；其中只包含产品介绍、授权和法律文档，不包含应用源码、密钥或内部构建配置。合并到 `main` 后，GitHub Actions 会自动发布至 GitHub Pages。
+
+本地预览：
+
+```bash
+cd website
+python3 -m http.server 4173
+```
 
 ---
 

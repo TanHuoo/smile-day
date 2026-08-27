@@ -2,7 +2,7 @@
 
 **最后更新**: 2026年7月9日
 
-正式在线版本: https://smile-day-push-service.ximai.workers.dev/terms
+正式在线版本: https://tanhuoo.github.io/smile-day/terms/
 
 Smile Day 的自动续期订阅适用 Apple 标准最终用户许可协议(EULA):
 
@@ -19,4 +19,4 @@ https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 Smile Day 隐私政策:
 
-https://smile-day-push-service.ximai.workers.dev/privacy
+https://tanhuoo.github.io/smile-day/privacy/
